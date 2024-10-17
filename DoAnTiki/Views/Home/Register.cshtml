@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+<html>
+<head>
+    <title>
+        Tiki - Tốt &amp; Nhanh
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="~/Content/CssDoAn.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <a href="https://localhost:44320/Home/index"><img alt="Tiki Logo" height="40" src="~/Hinh/logotiki.png" /></a>
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Giao nhanh 2h">
+            <a href="#" class="search-button">Tìm kiếm</a>
+        </div>
+        <div class="icons">
+            <a style="color: #777777" href="https://localhost:44320/Home/index" class="fas fa-home">
+                Trang Chủ
+            </a>
+            <a style="color:blue" href="#" class="fas fa-user">
+                Tài Khoản
+            </a>
+            <a style="color: #777777" href="#" class="fas fa-shopping-cart">
+                Giỏ Hàng
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <form class="registerform">
+            <!-- UserName input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" id="hieu123" class="form-control" />
+                <label class="form-label" for="form2Example1">UserName</label>
+            </div>
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" />
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                </div>              
+            </div>
+
+            <!-- Submit button -->
+            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Register</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p>or sign up with:</p>
+                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
